@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Demo PWA (Offline)</title>
+
+  <link rel="manifest" href="/manifest.json">
+  <link rel="stylesheet" href="/styles.css">
+  <meta name="theme-color" content="#1e88e5">
+</head>
+<body>
+  <header>
+    <h1>Demo PWA — оффлайн</h1>
+    <p id="status">Статус: <span id="online-status">unknown</span></p>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Контент</h2>
+      <p id="content">Этот контент доступен из HTML. Попробуй отключить интернет и перезагрузить — приложение должно открыться.</p>
+      <button id="fetch-btn">Сделать сетевой запрос (симуляция)</button>
+      <pre id="fetch-result" class="box">Результат запроса появится здесь.</pre>
+    </section>
+
+    <section class="card small">
+      <h3>Инструкции</h3>
+      <ol>
+        <li>Открой в браузере: `http://localhost:8080/`</li>
+        <li>При первом запуске сервис-воркер закеширует файлы.</li>
+        <li>Отключи интернет и перезагрузи — приложение всё ещё должно работать.</li>
+      </ol>
+    </section>
+  </main>
+
+  <footer>
+    <small>Demo PWA — Plain HTML/CSS/JS</small>
+  </footer>
+
+  <script src="/app.js"></script>
+</body>
+</html>
